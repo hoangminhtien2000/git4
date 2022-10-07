@@ -6,26 +6,30 @@
 </head>
 <body>
 <script>
-    let year =+prompt("Enter a year");
-    let LeapYear = false;
-
-    let By4 = year % 4 == 0;
-    if (By4) {
-        let By100 = year % 100 == 0;
-        if (By100) {
-            let By400 = year % 400 == 0;
-            if (By400) {
-                LeapYear = true;
+    let year=+prompt("Input year:");
+    leapyear= false;
+    if(year%4==0)
+    {
+        if(year%100==0)
+        {
+            if(year%400==0)
+            {
+                leapyear=true;
             }
-        } else {
-            LeapYear = true;
+        }
+        else
+        {
+            leapyear=true;
         }
     }
 
-    if (LeapYear) {
-        alert(year + " is a leap year");
-    } else {
-        alert(year + " is NOT a leap year");
+    if(leapyear)
+    {
+        document.write(year + " is LeapYear");
+    }
+    else
+    {
+        document.write(year + " is NOT LeapYear");
     }
 </script>
 </body>

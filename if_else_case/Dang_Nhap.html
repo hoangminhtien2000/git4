@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập và nhận thông báo</title>
+</head>
+<body>
+<script>
+    let ac=prompt("Account :");
+    if(ac=="Admin"){
+        let mk= prompt("Password :",'');
+         if(mk=="TheMaster"){
+            alert("Welcome");
+        }
+        else if(mk=="null"){
+            alert("Canceled");
+        }
+        else{
+            alert("Wrong password");
+        }
+    }
+    else if(ac=="null") {
+        alert("Canceled")
+    }
+    else{
+        alert("I don't know you")
+    }
+</script>
+</body>
+</html>
