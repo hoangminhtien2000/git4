@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Di chuyển Nobita</title>
+</head>
+<body>
+<img id="imgball" src="https://github.com/hoangminhtien2000/git4/blob/master/if_else_case/Nobita.png?raw=true" style="width:100px;height: 80px">
+<p>Click button below to move Nobita</p>
+<button onclick="moveLeft()">Left</button>
+<button onclick="moveRight()">Right</button>
+<button onclick="moveUp()">Up</button>
+<button onclick="moveDown()">Down</button>
+<script>
+  let ball=null;
+  ball= document.getElementById("imgball")
+  function init(){
+    ball= document.getElementById("imgball");
+    ball.style.position="relative";
+    ball.style.left="0px";
+    ball.style.top="0px";
+
+  }
+  function moveRight(){
+    ball.style.left= parseInt(ball.style.left) + 50 + "px";
+  }
+  function moveLeft(){
+    ball.style.left= parseInt(ball.style.left) - 50 + "px";
+  }
+  function moveUp(){
+    ball.style.top= parseInt(ball.style.top) - 50 + "px";
+  }
+  function moveDown(){
+    ball.style.top= parseInt(ball.style.top) + 50 + "px";
+  }
+
+  window.onload = init;
+</script>
+</body>
+</html>

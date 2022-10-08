@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu">
+      <change afterPath="$PROJECT_DIR$/move_Nobita.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/move_ball.html" beforeDir="false" afterPath="$PROJECT_DIR$/move_ball.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <workItem from="1665067009467" duration="1118000" />
       <workItem from="1665104420267" duration="12090000" />
       <workItem from="1665137380898" duration="340000" />
-      <workItem from="1665194033257" duration="2103000" />
+      <workItem from="1665194033257" duration="3078000" />
     </task>
     <task id="LOCAL-00001" summary="toantu">
       <created>1665194619642</created>
@@ -65,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665194619642</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="toantu">
+      <created>1665196285127</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665196285127</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
