@@ -5,6 +5,21 @@
     <title>Di chuyển bóng</title>
 </head>
 <body>
-
+<img id="imgball" src="https://raw.githubusercontent.com/hoangminhtien2000/git4/595cd40725f070f615bbe722b552931b1c921986/if_else_case/Football.svg" style="width: 30%">
+<p>Click button below to move the image to right!</p>
+<button onclick="moveRight()">Click me</button>
+<script>
+    let ball=null;
+    ball= document.getElementById("imgball")
+    function init(){
+        ball= document.getElementById("imgball");
+        ball.style.position="relative";
+        ball.style.left="0px";
+    }
+    function moveRight(){
+        ball.style.left= parseInt(ball.style.left) + 50 + "px";
+    }
+    window.onload = init;
+</script>
 </body>
 </html>
