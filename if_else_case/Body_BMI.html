@@ -10,16 +10,16 @@
     let h= +prompt("Height :");
     let bmi=w/Math.pow(h,2);
     if(bmi<18.5){
-        alert(bmi + " Underweight");
+        document.write("BMI = "+ bmi + " --> Underweight");
     }
     else if(18.5<=bmi<=25.0){
-        alert(bmi + " Normal");
+        document.write("BMI = "+ bmi + " --> Normal");
     }
     else if(25.0<=bmi<=30.0){
-        alert(bmi + " Overweight");
+        document.write("BMI = "+ bmi + " --> Overweight");
     }
     else {
-        alert(bmi + " Obese");
+        document.write("BMI = "+ bmi + " --> Obese");
     }
 </script>
 </body>
