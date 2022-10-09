@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu">
-      <change afterPath="$PROJECT_DIR$/so_ngay_trong_thang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APP_Doyouloveme.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/webstorm/javascript",
+    "last_opened_file_path": "D:/webstorm/buoi2/if_else_case",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -59,7 +59,8 @@
       <workItem from="1665137380898" duration="340000" />
       <workItem from="1665194033257" duration="5457000" />
       <workItem from="1665222373804" duration="1792000" />
-      <workItem from="1665230012515" duration="3688000" />
+      <workItem from="1665230012515" duration="4322000" />
+      <workItem from="1665277045852" duration="2355000" />
     </task>
     <task id="LOCAL-00001" summary="toantu">
       <created>1665194619642</created>
