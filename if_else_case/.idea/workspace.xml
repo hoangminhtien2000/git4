@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu">
-      <change afterPath="$PROJECT_DIR$/APP_Doyouloveme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bt1_practive_ifelse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
       <workItem from="1665194033257" duration="5457000" />
       <workItem from="1665222373804" duration="1792000" />
       <workItem from="1665230012515" duration="4322000" />
-      <workItem from="1665277045852" duration="2355000" />
+      <workItem from="1665277045852" duration="10318000" />
     </task>
     <task id="LOCAL-00001" summary="toantu">
       <created>1665194619642</created>

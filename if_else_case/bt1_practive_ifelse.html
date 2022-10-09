@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện</title>
+</head>
+<body>
+<div id="kq"></div>
+<script>
+// Bài 1:
+    /*let a= +prompt("a: ");
+    let b= +prompt("b: ");
+    if(a%b==0) alert(a+ " chia hết cho "+b);
+    else alert(a+ " chia hết cho "+b);*/
+
+// Bài 2:
+/*let a= +prompt("Nhập tuổi: ");
+if(a>=15) alert(a+ " tuổi đủ điều kiện học lớp 10 ");
+else alert(a+ " tuổi không đủ điều kiện học lớp 10 ");*/
+
+//Bài 3:
+/*let a= +prompt("a: ");
+if(a>0) alert(a+ " > 0 ");
+else if(a==0) alert(" Nhập lại a ");
+else alert(a+ " < 0 ");*/
+
+//Bài 4:
+/*let a= +prompt("a: ");
+let b= +prompt("b: ");
+let c= +prompt("c: ");
+if(a>=b&&a>=c) alert(a+ " lớn nhất ");
+else if(b>=a&&b>=c) alert(b+ " lớn nhất ");
+else alert(c+ " lớn nhất ");*/
+
+// Bài 5:
+/*let a= +prompt("Điểm kiểm tra giữa kì ");
+let b= +prompt("Điểm kiểm tra cuối kì ");
+let c= (a+2*b)/3;
+if(c>10||c<0)  alert( " Nhập lại điểm ");
+else if(c<=10&&c>=8) alert(c+ " Học sinh giỏi ");
+else if(c<8&&c>=6.5) alert(c+" Học sinh khá ");
+else if(c<6.5&&c>=3) alert(c+" Học sinh trung bình ");
+else alert(c+" Học sinh yếu");*/
+
+// Bài 6:
+/*let a= +prompt("Nhập số hàng bán được ");
+let b;
+if(a<5)  alert( "Không có hoa hồng ");
+else if(a<=50&&a>=5) {b=0.15*900*a; alert("Số tiền hoa hồng nhận được là " + b + "K ");}
+else  {b=0.2*900*a ;alert("Số tiền hoa hồng nhận được là " + b+"K ");}*/
+
+// Bài 7:
+let a= +prompt("Nhập số điện: ");
+let result;
+if(a>=0&&a<=50) result=a*1.678;
+else if(a>50&&a<=100) result=a*1.734;
+else if(a>100&&a<=200) result=a*2.014;
+else if(a>200&&a<=300) result=a*2.536;
+else if(a>300&&a<=400) result=a*2.834;
+else result=a*2.927;
+document.getElementById("kq").innerHTML="Số điện là " + a + "  Số tiền cần đóng : " + result +"K";
+</script>
+</body>
+</html>
