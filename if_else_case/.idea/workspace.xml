@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu" />
+    <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu">
+      <change afterPath="$PROJECT_DIR$/Game_Puzzle.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +62,7 @@
       <workItem from="1665277045852" duration="10538000" />
       <workItem from="1665300548374" duration="7905000" />
       <workItem from="1665362964865" duration="20825000" />
-      <workItem from="1665400648591" duration="690000" />
+      <workItem from="1665400648591" duration="1001000" />
     </task>
     <task id="LOCAL-00001" summary="toantu">
       <created>1665194619642</created>
