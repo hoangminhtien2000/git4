@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu">
-      <change afterPath="$PROJECT_DIR$/bt2_practice_ifelse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Caculator_simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GOOD_FAST_CHEAP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mt_OF_KIEN.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body_BMI.html" beforeDir="false" afterPath="$PROJECT_DIR$/Body_BMI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_nam_nhuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/KT_nam_nhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt2_practice_ifelse.html" beforeDir="false" afterPath="$PROJECT_DIR$/bt2_practice_ifelse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/move_Nobita.html" beforeDir="false" afterPath="$PROJECT_DIR$/move_Nobita.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/move_ball.html" beforeDir="false" afterPath="$PROJECT_DIR$/move_ball.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +68,8 @@
       <workItem from="1665222373804" duration="1792000" />
       <workItem from="1665230012515" duration="4322000" />
       <workItem from="1665277045852" duration="10538000" />
-      <workItem from="1665300548374" duration="7732000" />
+      <workItem from="1665300548374" duration="7905000" />
+      <workItem from="1665362964865" duration="20413000" />
     </task>
     <task id="LOCAL-00001" summary="toantu">
       <created>1665194619642</created>

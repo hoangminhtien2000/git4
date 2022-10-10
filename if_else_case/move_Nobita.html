@@ -4,37 +4,43 @@
   <meta charset="UTF-8">
   <title>Di chuyển Nobita</title>
 </head>
-<body>
-<img id="imgball" src="https://github.com/hoangminhtien2000/git4/blob/master/if_else_case/Nobita.png?raw=true" style="width:100px;height: 80px">
-<p>Click button below to move Nobita</p>
-<button onclick="moveLeft()">Left</button>
-<button onclick="moveRight()">Right</button>
-<button onclick="moveUp()">Up</button>
-<button onclick="moveDown()">Down</button>
+<body onload="docReady()">
+<img id="imgball" src="https://github.com/hoangminhtien2000/git4/blob/master/if_else_case/Nobita.png?raw=true" style=" position:absolute; left:100px;top: 100px;"  width="100";height="80" />
+<h1>Move Nobita</h1>
 <script>
-  let ball=null;
-  ball= document.getElementById("imgball")
-  function init(){
-    ball= document.getElementById("imgball");
-    ball.style.position="relative";
-    ball.style.left="0px";
-    ball.style.top="0px";
-
-  }
-  function moveRight(){
+  let ball= document.getElementById("imgball");
+  function move_Right(){
     ball.style.left= parseInt(ball.style.left) + 50 + "px";
   }
-  function moveLeft(){
+  function move_Left(){
     ball.style.left= parseInt(ball.style.left) - 50 + "px";
   }
-  function moveUp(){
+  function move_Up(){
     ball.style.top= parseInt(ball.style.top) - 50 + "px";
   }
-  function moveDown(){
+  function move_Down(){
     ball.style.top= parseInt(ball.style.top) + 50 + "px";
   }
-
-  window.onload = init;
+  function moveSelection(evt) {
+    switch (evt.keyCode) {
+      case 37:
+        move_Left();
+        break;
+      case 39:
+        move_Right();
+        break;
+      case 38:
+        move_Up();
+        break;
+      case 40:
+        move_Down();
+        break;
+    }
+  }
+  function docReady() {
+    window.addEventListener('keydown', moveSelection);
+  }
 </script>
+
 </body>
 </html>

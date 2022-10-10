@@ -8,29 +8,20 @@
 <script>
     let year=+prompt("Input year:");
     leapyear= false;
-    if(year%4==0)
-    {
-        if(year%100==0)
-        {
+    if(year%4==0) {
+        if(year%100==0) {
             if(year%400==0)
-            {
                 leapyear=true;
-            }
         }
         else
-        {
             leapyear=true;
-        }
     }
-
+//Hiển thị
     if(leapyear)
-    {
         document.write(year + " is LeapYear");
-    }
     else
-    {
         document.write(year + " is NOT LeapYear");
-    }
+
 </script>
 </body>
 </html>
