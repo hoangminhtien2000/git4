@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Bảng cửu chương</title>
+    <style>
+        td{
+            border: black 1px solid;
+        }
+    </style>
 </head>
+
 <body>
+
+<!--Nhập bảng nhân a -->
+<!--<script>-->
+<!--  let a= +prompt("Bảng cửu chương :");-->
+<!--  let b=1;-->
+<!--  for(let i=1;i<=10;i++){-->
+<!--    b=a*i;-->
+<!--    document.write(i+"x"+a+"="+b+"<br>");-->
+<!--  }-->
+<!--</script>-->
+
+
+<p id="p1">
+</p>
 <script>
-  let a= +prompt("Bảng cửu chương :");
-  let b=1;
-  for(let i=1;i<=10;i++){
-    b=a*i;
-    document.write(i+"x"+a+"="+b+"<br>");
-  }
+    let p1 = document.getElementById("p1")
+    let cout = " ";
+    cout +=  "<table>"
+    for ( let i = 1 ; i <= 10; i++ ) {
+        cout = cout + "<tr>";
+        for ( let j =1; j <= 10 ; j++ ){
+            cout = cout + "<td>";
+            cout += j + "x" + i + "=" + (i*j);
+            cout = cout + "</td>"
+        }
+        cout = cout + "</tr>"
+    }
+    cout += "</table>";
+    document.write(cout);+lk
 </script>
 </body>
 </html>
