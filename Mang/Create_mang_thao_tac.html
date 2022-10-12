@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mảng và thao tác với mảng</title>
+</head>
+<body>
+<input id="t">
+<button id="add" onclick="doadd()">Add</button>
+<button id="display" onclick="dodisplay()">Display</button>
+<div id="resule"></div>
+<script>
+    let x=0;
+    let arrary=[];
+function doadd(){
+    arrary[x]=document.getElementById("t").value;
+    alert(" Element  " + arrary[x] + " added to index " + x);
+    x++;
+    document.getElementById("t").value="";
+}
+function dodisplay(){
+    let e ="<hr/>";
+    for(let i=0;i<arrary.length;i++){
+        e+= "Element " + i + " = " + arrary[i] + "<br/>";
+        document.getElementById("resule").innerHTML= e;
+
+    }
+}
+</script>
+</body>
+</html>
