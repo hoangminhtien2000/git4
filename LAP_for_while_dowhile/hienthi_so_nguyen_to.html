@@ -6,7 +6,8 @@
 </head>
 <body>
 <script>
-    function checkNT(number) {
+    let number = parseInt(prompt("Nhập n số nguyên tố đầu tiên: ")); //10
+    function checkNT() {
         let count = 0; // đếm số ước của số đang xét;
         let countSNT = 0; // đếm xem đã đủ số lượng số nguyên tố cần in ra chưa;
         for (let i = 2; i < 1000; i++) { // 2,3,4,5,6,7,8,....,1000
@@ -26,7 +27,7 @@
             }
         }
     }
-    let number = parseInt(prompt("Nhập n số nguyên tố đầu tiên: ")); //10
+
     checkNT(number);
 </script>
 </body>
