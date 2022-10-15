@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 01</title>
+</head>
+<body>
+
+<!--lesson4:-->
+
+<input id="ht">
+<button onclick="add()">ADD</button>
+<input id="ht2">
+<button onclick="add2()">ADD2</button>
+<button onclick="display()">DISPLAY</button>
+<div id="array"></div>
+
+<script>
+    //lesson1:
+
+    //  let a=[1,2,3,11,14,55,5,8,6,99];
+    //  let dem=0;
+    //  document.write("a =["+a.join()+"]<br/>");
+    //  for(let i in a){
+    //    if(a[i]>=10) {
+    //    document.write(a[i]+"<br/>");
+    //    dem++;
+    //    }
+    // }
+    // document.write("Có : "+dem+" số lớn hơn 10");
+
+    //lesson2:
+
+    // let a=[1,2,3,11,14,55,5,8,6,99];
+    // let max=a[0];
+    // let c;
+    // for(let i in a){
+    //     if(a[i]>max)
+    //         max=a[i];
+    //     c=i;
+    // }
+    // document.write(" Max = "+max +" Vị trí: " + c);
+
+    //lesson3:
+
+    // let a=[1,2,3,11,14,55,5,8,6,99];
+    // let max=a[0];
+    // let s=0;
+    // let tb;
+    // for(let i in a){
+    //     if(a[i]>max)
+    //         max=a[i];
+    // }
+    // document.write(" Max array : "+max+ "<br/>");
+    // for(let i in a){
+    //     s+=a[i];
+    // }
+    // tb=s/(a.length)
+    // document.write(" Giá trị trung bình: " + tb);
+
+    //lesson 4:
+    // let a = [];
+    // let x = 0;
+    // function add() {
+    //     a[x] = document.getElementById("ht").value;
+    //     //alert("add "+a[x]+" location "+x);
+    //     x++;
+    //     document.getElementById("ht").value = "";
+    // }
+    // let dem = 1;
+    // function display() {
+    //     let e = "<hr/>";
+    //
+    //     for (let i in a) {
+    //         e += "  " + a[i] + ', ';
+    //     }
+    //     if (dem == 1) {
+    //         document.getElementById("array").innerHTML = 'Mảng vừa nhập là : ' + e;
+    //         dem++;
+    //     } else {
+    //         document.getElementById("array").innerHTML = 'Mảng sau khi đảo ngược là : ' + a.reverse();
+    //         dem = 1;
+    //     }
+    // }
+
+    //lesson 5:
+
+    // let a=[1,-4,3,11,-1,55,5,8,-5,99];
+    // let dem=0;
+    // document.write("a =["+a.join()+"]<br/>");
+    // for(let i in a){
+    //     if(a[i]<0) {
+    //         document.write(a[i]+"<br/>");
+    //         dem++;
+    //     }
+    // }
+    // document.write("Có : "+dem+" số nguyên âm");
+
+    //lesson 6: cần sửa
+
+    // let a=[];
+    // let x=0;
+    // function add(){
+    //     a[x]=document.getElementById("ht").value;
+    //     x++;
+    //     document.getElementById("ht").value="";
+    // }
+    // function display(){
+    //     let e="<hr/> Mảng vừa nhập là: ";
+    //     for(let i in a){
+    //         e+=" "+a[i]+", ";
+    //     }
+    //     document.getElementById("array").innerHTML= e;
+    // }
+
+    //lesson 7:
+
+
+    //lesson 8:
+
+    // let a = [];
+    // let x = 0;
+    //
+    // function add() {
+    //     a[x] = document.getElementById("ht").value;
+    //     //alert("add "+a[x]+" location "+x);
+    //     x++;
+    //     document.getElementById("ht").value = "";
+    // }
+    //
+    // function display() {
+    //     let e = "<hr/> Mảng vừa nhập là";
+    //     for (let i in a) {
+    //         e += "  " + a[i] + ', ';
+    //     }
+    //     document.getElementById("array").innerHTML = e + "<br/>" + "Mảng sau khi sắp xếp là: " + a.sort();
+    // }
+
+    //lesson 9:
+    let a = [];
+    let b = [];
+    let x = 0;
+    let y = 0;
+
+    function add() {
+        a[x] = document.getElementById("ht").value;
+        x++;
+        document.getElementById("ht").value = "";
+    }
+
+    function add2() {
+        b[y] = document.getElementById("ht2").value;
+        y++;
+        document.getElementById("ht2").value = "";
+    }
+
+    function display(){
+        let e="<hr/>"+"Mảng a: ";
+        for(let i in a){
+            e+=a[i]+", ";
+        }
+
+        let k="<br/>"+"Mảng b: ";
+        for(let i in a){
+            k+=b[i]+", ";
+        }
+
+        let c="<br/>"+"Tổng 2 mảng a và b: "+a+","+b;
+        document.getElementById("array").innerHTML=e+k+c;
+
+    }
+</script>
+</body>
+</html>

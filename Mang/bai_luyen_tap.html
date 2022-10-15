@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài luyện tâp</title>
+</head>
+<body>
+<input type="text" id="demo"><br>
+<button type="button" onclick="check()" >check</button>
+<div id="r"></div>
+</body>
+</html>
+<script>
+    //lesson 1:
+
+    // let a=[12,6,7,13,5,9,16]
+    // let demchan=0;
+    // for(let i in a){
+    //     if(a[i]%2==0)
+    //         demchan++;
+    //   }
+    // document.write("Even: "+demchan +"<br/>");
+    // document.write("Odd: " + (a.length-demchan));
+
+    //lesson2:
+
+    // let a = [12, 6, 7, 13, 5, 9, 16]
+    // let demsnt = 0;
+    // let dem = true;
+    // for (let i in a) {
+    //     dem = true
+    //     for (let j = 2; j < a[i]; j++) {
+    //         if (a[i] % j == 0) dem = false;
+    //     }
+    //     if (dem == true) {
+    //         demsnt++;
+    //         document.write(a[i]+"<br/>");
+    //     }
+    // }
+    // document.write("Even: " + demsnt + "<br/>");
+
+    //lesson3:
+
+    function check() {
+        let a = [12, 6, 7, 13, 5, 9, 16]
+        let x = document.getElementById('demo').value
+        let b= parseInt(x);
+
+        for (let i = 0; i <a.length;i++){
+             if(i=== b){
+                 a.splice(i,1);
+             }
+         }
+         document.getElementById('r').innerHTML=a
+    }
+
+</script>

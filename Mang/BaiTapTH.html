@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập thực hành</title>
+</head>
+<body>
+<script>
+  //Bài 1:
+/*  let a=[7,7,6,3,1];
+  let max=a[0];
+  for(let i in a){
+    if(a[i]>max)
+      max=a[i];
+  }
+  let min=a[0];
+  for(let i in a){
+    if(a[i]<min)
+      min=a[i];
+  }
+  let max2=min;
+  for(let i in a){
+      if(a[i]>max2&&a[i]<max)
+          max2=a[i];
+  }
+  alert(max2)*/
+
+  //Bài 2:
+  let a=[1,7,7,6,3];
+  let first=0;
+  let last=a.length-1;
+  let b;
+while(first<last){
+    b=a[first];
+    a[first]=a[last];
+    a[last]=b;
+    first++;
+    last--;
+}
+  document.write(a);
+</script>
+</body>
+</html>

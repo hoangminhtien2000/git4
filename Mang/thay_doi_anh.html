@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay ảnh</title>
+</head>
+<body>
+<img id="img" src="https://github.com/hoangminhtien2000/git1/blob/main/Guilty%20Crown.jpg?raw=true" width="30%">
+<br/>
+<button id="bt" onclick="change()">Change</button>
+</body>
+</html>
+<script>
+    let count=1;
+  function change(){
+    if(count==1){
+    document.getElementById("img").src="https://github.com/hoangminhtien2000/git1/blob/main/Guilty%20Crown.jpg?raw=true"
+    count++
+    }
+    else{
+        document.getElementById("img").src="https://i.imgur.com/KAi3pm9.jpg"
+        count=1;
+    }
+  }
+</script>
