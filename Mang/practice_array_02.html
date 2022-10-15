@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 02</title>
+</head>
+<body>
+<input id="ht">
+<button id="add" onclick="add()">ADD</button>
+<input id="ht2">
+<button onclick="add2()">ADD2</button>
+<button id="display" onclick="display()">DISPLAY</button>
+<div id="result"></div>
+</body>
+</html>
+<script>
+    //lesson 1:
+    // let a = [
+    //     [1, 2, 1, 24],
+    //     [8, 11, 9, 4],
+    //     [7, 0, 7, 27],
+    //     [7, 4, 28, 14],
+    //     [3, 10, 26, 7]
+    // ];
+    // for(let i in a){
+    //     document.write("Row "+i+"<br/>");
+    //     for(let j=0;j<a[i].length;j++){
+    //         document.write(a[i][j]+"<br/>");
+    //     }
+    // }
+
+    //lesson2:
+    // let a = [];
+    // let x = 0;
+    //
+    // function add() {
+    //     a[x] = document.getElementById("ht").value;
+    //     x++;
+    //     document.getElementById("ht").value = "";
+    // }
+    //
+    // function display() {
+    //     let b = [];
+    //     let last = a.length - 1
+    //     for (let j = 0; j < a.length; j++) {
+    //         b[j] = a[last];
+    //         last--;
+    //     }
+    //     document.getElementById("result").innerHTML = "Mảng vừa nhập là: " + a + "<br/>" + "Mảng đảo ngược là: " + b;
+    // }
+
+    //lesson3:
+
+
+    //lesson4:
+
+
+    //lesson5:
+    // let a = [];
+    // let b = [];
+    // let x = 0;
+    // let y = 0;
+    //
+    // function add() {
+    //     a[x] = document.getElementById("ht").value;
+    //     x++;
+    //     document.getElementById("ht").value = "";
+    // }
+    //
+    // function add2() {
+    //     b[y] = document.getElementById("ht2").value;
+    //     y++;
+    //     document.getElementById("ht2").value = "";
+    // }
+    //
+    // function display() {
+    //     let e = "<hr/>" + "Mảng a: ";
+    //     for (let i in a) {
+    //         e += a[i] + ", ";
+    //     }
+    //
+    //     let k = "<br/>" + "Mảng b: ";
+    //     for (let i in a) {
+    //         k += b[i] + ", ";
+    //     }
+    //
+    //     for (let i in a) {
+    //         for (let j in b) {
+    //             if (a[i] === b[j])
+    //                 document.getElementById("result").innerHTML = e + k + "<br/>A Bằng B";
+    //             else document.getElementById("result").innerHTML = e + k + "<br/>A Khác B";
+    //         }
+    //     }
+    // }
+
+
+    //lesson6:
+    let a = [];
+    let x = 0;
+
+    function add() {
+        a[x] = document.getElementById("ht").value;
+        x++;
+        document.getElementById("ht").value = "";
+    }
+
+    function display() {
+
+        for (let i in a) {
+            e += a[i] + ', ';
+        }
+        for (let i in a) {
+            if (a[i] === "-") a[i] = "_"
+        }
+        document.getElementById("result").innerHTML = "Mảng vừa đổi - thành _ là:  " + a;
+    }
+
+</script>
