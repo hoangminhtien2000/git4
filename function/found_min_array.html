@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nhỏ nhất của mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+function minarray(a){
+  let min=a[0];
+  for(let i in a){
+    if(a[i]<min) min=a[i];
+  }
+  return min;
+}
+let arr1=[3,5,1,8,-3,7,8];
+let min=minarray(arr1);
+document.write(min);
+</script>
