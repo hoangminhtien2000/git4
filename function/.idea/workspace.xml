@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68255ce3-84f2-41b0-be56-51a2c690ae25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai_tap.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Practice_use_function_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_use_function_02.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../if_else_case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../if_else_case/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -40,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/webstorm/buoi2/function",
+    "last_opened_file_path": "D:/webstorm/buoi2/Mang",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -59,7 +58,8 @@
       <workItem from="1665918663073" duration="1717000" />
       <workItem from="1665930763766" duration="1480000" />
       <workItem from="1665967989161" duration="12236000" />
-      <workItem from="1665989073336" duration="7823000" />
+      <workItem from="1665989073336" duration="13263000" />
+      <workItem from="1666009213622" duration="3887000" />
     </task>
     <servers />
   </component>

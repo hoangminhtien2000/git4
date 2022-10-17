@@ -5,19 +5,140 @@
     <title>Luyện tập và sử dụng hàm 02</title>
 </head>
 <body>
+
+<!--lesson8-->
+<input id="ht">
+<button onclick="add()">ADD</button>
+<button onclick="display()">DISPLAY</button>
+<button onclick="check()">CHECK</button>
+<button onclick="display_check()">DISPAY_CHECK</button>
+<div id="result"></div>
+<div id="result2"></div>
 <script>
 
     //lesson1
-    function binhphuong(a) {
-        return a*a;
-    }
-    let x=binhphuong(6);
-    alert(x);
+    // function binhphuong(a) {
+    //     return a*a;
+    // }
+    // let x=binhphuong(6);
+    // alert(x);
 
     //lesson2:
-    function s_v_tron(r) {
+    // function s_v_tron(r) {
+    //   let  a= 2*r*Math.PI;
+    //   let b= Math.PI*r*r;
+    //   c= "Chu vi hình tròn " +a+"<br/>"+ " Diện tích hình tròn " +b;
+    //     return c;
+    //       }
+    //  let a= s_v_tron(3);
+    // document.write(a);
 
+    //lesson3:
+    // let s=1;
+    // function giai_thua(a) {
+    // for(let i=1;i<=a;i++){
+    //     s*=i;
+    // }
+    // return s;
+    // }
+    // let x=giai_thua(4);
+    // document.write(x);
+
+    //lesson4:
+    // let b = +prompt("Enter a : ");
+    // function check(a) {
+    //     if (a == +a) return "true";
+    //     else return  "false";
+    // }
+    // let x = check(b);
+    // alert(x);
+
+    //lesson5:
+    // function min1(a,b,c) {
+    //     let min =a;
+    //     if(b<min) min =b;
+    //     if(c<min) min=c;
+    //     return min;
+    // }
+    // let x= +prompt("Enter a");
+    // let y= +prompt("Enter b");
+    // let z= +prompt("Enter c");
+    // let k=min1(x,y,z);
+    // alert(k);
+
+    //lesson6
+    //     function snd(a) {
+    //         if(a>0) return "True";
+    //         if(a<0) return "False";
+    //         if(a==0) return "0";
+    //     }
+    //     let x= +prompt("Enter a");
+    //     let k=snd(x);
+    //     alert(k);
+
+    //lesson7
+    // function swap(arr, a, b) {
+    //     let x = arr[a];
+    //     arr[a] = arr[b];
+    //     arr[b] = x;
+    // }
+    //
+    // let k = [1, 2, 3];
+    // swap(k, 0, 1);
+    // document.write(k);
+
+    //lesson8
+    // let ht = document.getElementById("ht");
+    // let result = document.getElementById("result");
+    // let arr = [];
+    //
+    // function add() {
+    //     let a = ht.value;
+    //     arr.push(a);
+    //     ht.value = "";
+    // }
+    //
+    //
+    // function display() {
+    //     let b = "<hr/>" + "Mảng ban đầu là ";
+    //     for (let i in arr) {
+    //         b += arr[i] + ",";
+    //     }
+    //     let k = arr.reverse();
+    //     result.innerHTML = b + "<br/>Mảng đảo ngược là " + k;
+    // }
+
+    //lesson9:
+    let ht = document.getElementById("ht");
+    let result = document.getElementById("result");
+    let result2 = document.getElementById("result2");
+    let arr = [];
+
+    function add() {
+        let a = ht.value;
+        arr.push(a);
+        ht.value = "";
     }
+
+    function display() {
+        result.innerHTML = "<hr/>" + "Mảng ban đầu là "+arr ;
+    }
+
+    function check() {
+        let dem =0;
+     for (let i in arr){
+         let a=ht.value;
+         if(a===arr[i]) dem++;
+     }
+     if(dem>0) return dem;
+     else return -1;
+    }
+
+    function display_check() {
+        let k=check(arr);
+        result2.innerHTML = " Xuất hiện: "+k+" lần" ;
+    }
+
 </script>
 </body>
 </html>
