@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
 </head>
 <body>
-$END$
+<input id="ht">
+<button id="bt" onclick="enter1()">Enter</button>
+<div id="result"></div>
+
+<script>
+    let ht = document.getElementById("ht");
+    let result = document.getElementById("result");
+
+    function enter1() {
+        let value = parseInt(ht.value)
+        let dem_uoc=0;
+        for (let i = 1; i <= value; i++) {
+            if (value % i === 0) {
+                dem_uoc++;
+            }
+        }
+        if(dem_uoc===2) result.innerText = value+ " Là số nguyên tố";
+        else  result.innerText = value+ " Không là số nguyên tố";
+    }
+
+</script>
 </body>
 </html>
