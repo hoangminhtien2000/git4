@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<input id="ht">
+<button onclick="covertfeet()">= Meters</button>
+<button onclick="covermeters()">= Meters</button>
+<div id="result"></div>
+<script>
+  let result= document.getElementById("result");
+  let ht = document.getElementById("ht");
+  let ht1 = document.getElementById("ht1");
+
+  let a1 = ht1.value;
+  function covertfeet() {
+    let a = ht.value;
+    let x= a*0.305;
+    result.innerHTML=a+" feet = "+x+" meters";
+  }
+
+  function covermeters() {
+      let a = ht.value;
+      let x= a*3.279;
+      result.innerHTML=a+" meters = "+x+" feet";
+  }
+</script>
+</body>
+</html>
