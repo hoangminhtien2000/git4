@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68255ce3-84f2-41b0-be56-51a2c690ae25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Ktra_doi_xung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Practice_use_function_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_use_function_02.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../if_else_case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../if_else_case/.idea/workspace.xml" afterDir="false" />
@@ -32,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/webstorm/buoi2/Mang",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/webstorm/buoi2/function&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +60,9 @@
       <workItem from="1665930763766" duration="1480000" />
       <workItem from="1665967989161" duration="12236000" />
       <workItem from="1665989073336" duration="13263000" />
-      <workItem from="1666009213622" duration="3887000" />
+      <workItem from="1666009213622" duration="4250000" />
+      <workItem from="1666013534710" duration="11000" />
+      <workItem from="1666054432347" duration="3566000" />
     </task>
     <servers />
   </component>
