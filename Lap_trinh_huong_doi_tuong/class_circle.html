@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình tròn</title>
+</head>
+<body>
+<script>
+    let circle = function (r) {
+        this.r;
+
+        this.chageR = function () {
+            return r;
+        }
+        this.chageArea = function () {
+            return r * r * Math.PI;
+        }
+    }
+
+    let a=new circle(2);
+    document.write("Radius: "+a.chageR()+"</br>Area= "+a.chageArea());
+</script>
+</body>
+</html>
