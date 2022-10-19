@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quản lý sản phẩm</title>
+    <title>Phần mềm quản lý sản phẩm</title>
 </head>
 <body>
+Enter name's Product: <input id="ip">
+<button onclick="add()">ADD</button>
+<h2>List Name</h2>
+<table id="ht" width="400"></table>
 
+<script>
+    let name = [];
+    let ip = document.getElementById("ip");
+    let ht = document.getElementById("ht");
+
+    function show() {
+        let str = `<tr>
+        <th>STT</th>
+        <th>Name</th>
+        </tr>`
+        for (let i in name) {
+            str += `<tr>
+        <td>${i}</td>
+        <td><h4>${name[i]}</h4></td>
+        <td><button onclick="delete1()">DELETE</button</td>
+        <td><button onclick="edit1()">EDIT</button</td>
+        </tr>`
+        }
+        ht.innerHTML=str;
+    }
+
+    function add() {
+        let x=ip.value;
+        name.push(x);
+        ip.value="";
+        show();
+    }
+
+    function delete1(index) {
+        name.splice(index,1);
+        show();
+    }
+
+    function edit1(index) {
+        let x=prompt("Enter new name: ");
+        name.splice(index,1,x);
+        show();
+
+    }
+</script>
 </body>
 </html>
+
