@@ -6,25 +6,28 @@
 </head>
 <body>
 <script>
-    let MyDate=function(day,month,year){
-      this.day=day;
-      this.month=month;
-      this.year=year;
+    class MyDate {
+        day;
+        month;
+        year;
 
-      this.chageday=function(day){
-          this.day=day;
-      }
-      this.chagemonth=function (month) {
-          this.month=month;
-      }
-      this.chageyear=function (year){
-          this.year=year;
-      }
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        setday(day) {this.day = day; }
+
+        setmonth(month) {  this.month = month; }
+
+        setyear(year) { this.year = year; }
     }
-    let date1= new MyDate(16,10,2022);
-    document.write(date1.day+"/"+date1.month+"/"+date1.year);
-    date1.chageday(19);
-    document.write("<br/>"+date1.day+"/"+date1.month+"/"+date1.year);
+
+    let date1 = new MyDate(16, 10, 2022);
+    document.write(date1.day + "/" + date1.month + "/" + date1.year);
+    date1.setday(19);
+    document.write("<br/>" + date1.day + "/" + date1.month + "/" + date1.year);
 </script>
 </body>
 </html>

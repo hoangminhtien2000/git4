@@ -6,19 +6,24 @@
 </head>
 <body>
 <script>
-    let circle = function (r) {
-        this.r;
+    class Circle {
+        radius;
 
-        this.chageR = function () {
-            return r;
+        constructor(radius) {
+            this.radius = radius;
         }
-        this.chageArea = function () {
-            return r * r * Math.PI;
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getArea() {
+            return this.radius * this.radius * Math.PI;
         }
     }
 
-    let a=new circle(2);
-    document.write("Radius: "+a.chageR()+"</br>Area= "+a.chageArea());
+    let x = new Circle(2);
+    document.write("Radius: " + x.getRadius() + "</br>Area: " + x.getArea());
 </script>
 </body>
 </html>
