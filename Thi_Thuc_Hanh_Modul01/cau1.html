@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu01</title>
+</head>
+<body>
+
+<script>
+    let a =[7,8,9,10,9,8,7,6,9,10,9,10]
+    let sum=0;
+    function findAvg(){
+        for (let i in a){
+            sum+=a[i];
+        }
+        return sum/a.length;
+    }
+    let b=findAvg(a);
+    document.write(`Điểm trung bình của danh sách điểm thi là: ${b}`);
+</script>
+</body>
+</html>
