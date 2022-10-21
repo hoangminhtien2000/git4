@@ -6,27 +6,28 @@
 </head>
 <body>
 <script>
-  class Temperture{
-    c;
-      constructor(c) {
-          this.c = c;
-      }
+    class Temperture {
+        c;
 
-    getc(){
-          return this.c;
+        constructor(c) {
+            this.c = c;
+        }
+
+        getc() {
+            return this.c;
+        }
+
+        getf() {
+            return (this.c * 1.8) + 32;
+        }
+
+        getkenvin() {
+            return this.c + 273.15;
+        }
     }
 
-    getf(){
-          return (this.c*1.8)+32;
-    }
-
-    getkenvin(){
-          return this.c+273.15;
-    }
-  }
-
-  let x= new Temperture(25);
-  document.write("F= "+x.getf()+" <br/>Kenvin "+x.getkenvin());
+    let x = new Temperture(25);
+    document.write("F= " + x.getf() + " <br/>Kenvin " + x.getkenvin());
 </script>
 </body>
 </html>
