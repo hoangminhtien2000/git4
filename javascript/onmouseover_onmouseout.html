@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện onmouseover và onmouseout</title>
+</head>
+<body>
+<p id="demo" onmouseover="mouseover()" onmouseout="mouseout()">This is a text</p>
+<script>
+  function mouseover(){
+    document.getElementById("demo").style.color="red";
+  }
+  function mouseout(){
+    document.getElementById("demo").style.color="black";
+  }
+</script>
+</body>
+</html>

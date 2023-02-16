@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31929749-2bb6-4c7d-95a2-c6be9d3e8c27" name="Changes" comment="toantu">
-      <change afterPath="$PROJECT_DIR$/Game_Puzzle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lap_trinh_huong_doi_tuong/Temperture.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lap_trinh_huong_doi_tuong/Temperture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lap_trinh_huong_doi_tuong/creat_class_date.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lap_trinh_huong_doi_tuong/creat_class_date.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../function/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../function/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../function/Convert_feet_meters.html" beforeDir="false" afterPath="$PROJECT_DIR$/../function/Convert_feet_meters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../function/Quan_ly_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/../function/Quan_ly_san_pham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,16 @@
       <workItem from="1665277045852" duration="10538000" />
       <workItem from="1665300548374" duration="7905000" />
       <workItem from="1665362964865" duration="20825000" />
-      <workItem from="1665400648591" duration="1001000" />
+      <workItem from="1665400648591" duration="1342000" />
+      <workItem from="1665406773230" duration="325000" />
+      <workItem from="1665412325489" duration="609000" />
+      <workItem from="1665451012393" duration="65000" />
+      <workItem from="1665454894657" duration="87000" />
+      <workItem from="1665482002992" duration="522000" />
+      <workItem from="1665483443685" duration="5000" />
+      <workItem from="1665490135875" duration="10000" />
+      <workItem from="1665496881952" duration="35000" />
+      <workItem from="1666268679759" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="toantu">
       <created>1665194619642</created>

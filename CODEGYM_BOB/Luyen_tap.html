@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+BAI 1
+
+module.exports = {
+sum_even_numbers
+};
+
+function sum_even_numbers(){
+var sum = 0;
+for (let i =1;i<=1000;i++){
+if(i%2==0)
+sum+=i;
+}
+return sum;
+}
+
+
+BAI2
+module.exports = {
+iterArr
+};
+
+let a=[1,2,5]
+function iterArr(arr) {
+var sum = 0;
+for (let i=0;i<arr.length;i++){
+sum+=arr[i];
+}
+return sum;
+}
+
+
+BAI3
+module.exports = {
+sum_odd_5000
+};
+
+function sum_odd_5000() {
+var sum = 0;
+for(let i=0;i<5000;i++){
+if(i%2!=0)
+sum+=i;
+}
+return sum;
+}
+
+BAI4
+module.exports = {
+findMax
+};
+
+function findMax(arr) {
+var max = arr[0];
+for(let i=0;i<arr.length;i++){
+if(arr[i]>max)
+max=arr[i];
+}
+return max;
+}
+
+
+BAI5
+module.exports = {
+findAvg
+};
+
+function findAvg(arr) {
+let sum=0;
+for(let i=0;i<arr.length;i++){
+sum+=arr[i];
+}
+let avg=sum/arr.length;
+return avg;
+}
+
+
+BAI6
+module.exports = {
+oddNumbers
+};
+
+function oddNumbers() {
+var arr = [];
+for(let i=0;i<50;i++){
+if(i%2!=0)
+arr.push(i);
+}
+return arr;
+}
+
+
+BAI7
+module.exports = {
+greaterY
+};
+
+function greaterY(arr, Y) {
+let count = 0;
+for(let i=0;i<arr.length;i++){
+if(arr[i]>Y)
+count=count+1;
+}
+return count;
+}
+
+
+BAI8
+module.exports = {
+squareVal
+};
+
+function squareVal(arr) {
+for(let i=0;i<arr.length;i++){
+arr[i]*=arr[i];
+}
+
+return arr;
+}
+
+
+
+BAI9
+module.exports = {
+noNeg
+};
+
+function noNeg(arr) {
+for(let i=0;i<arr.length;i++){
+if(arr[i]<0)
+arr[i]=0;
+}
+return arr;
+}
+
+
+
+BAI10
+module.exports = {
+maxMinAvg
+};
+
+function maxMinAvg(arr) {
+let arrnew=[];
+let sum=0;
+let max= arr[0];
+let min= arr[0];
+let avg=0;
+for(let i=0;i<arr.length;i++){
+if(arr[i]>max)
+max=arr[i];
+}
+for(let i=0;i<arr.length;i++){
+if(arr[i]<min)
+min=arr[i];
+}
+for(let i=0;i<arr.length;i++){
+sum+=arr[i];
+}
+arrnew.push(max);
+arrnew.push(min);
+avg=sum/arr.length;
+arrnew.push(avg);
+return arrnew;
+}
+
+
+
+BAI11
+module.exports = {
+swap
+};
+
+function swap(arr) {
+
+let temp=0;
+
+temp=arr[0];
+arr[0]=arr[arr.length-1];
+arr[arr.length-1]=temp;
+
+
+return arr;
+}
+
+
+
+BAI12
+module.exports = {
+numToStr
+};
+
+function numToStr(arr) {
+for(let i=0;i<arr.length;i++){
+if(arr[i]<0)
+arr[i]='Dojo';
+}
+return arr;
+}
+</body>
+</html>

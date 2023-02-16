@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+<table style="margin-top: 250px; margin-left: 600px">
+    <tr>
+        <td>Tên đăng nhập:</td>
+        <td><input id="username2"></td>
+    </tr>
+    <tr>
+        <td>Mật khẩu:</td>
+        <td><input type="password" id="password2"></td>
+    </tr>
+    <tr>
+        <td><button onclick="login1()">Đăng nhập</button></td>
+        <td><button onclick="goto_regsiter()">Đăng kí</button></td>
+    </tr>
+</table>
+
+
+<script>
+    let usernames  = JSON.parse(localStorage.getItem("usernames"));
+    let passwords  = JSON.parse(localStorage.getItem("passwords"));
+    let accountNames  = JSON.parse(localStorage.getItem("accountNames"));
+    //----------------------------Kiểm tra tài khoản và mật khẩu đã tồn tại chưa-------------------------------------------
+    function isAccountPasswordExist(username, password) {
+        localStorage.setItem("usernames", JSON.stringify(usernames));
+        localStorage.setItem("passwords", JSON.stringify(passwords));
+        for (let i in usernames) {
+            if (usernames[i] === username && passwords[i] === password) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //------------------------------------------------Tìm tên tài khoản----------------------------------------------------
+    function checkName(username) {
+        localStorage.setItem("usernames", JSON.stringify(usernames));
+        for (let i in usernames) {
+
+            if (usernames[i] === username) {
+                return i;
+            }
+        }
+        return false;
+    }
+
+
+    function clear() {
+        let a = document.getElementById("username2").value="";
+        let b = document.getElementById("password2").value="";
+
+    }
+
+
+    localStorage.setItem("accountNames", JSON.stringify(accountNames));
+    function login1() {
+        let a = document.getElementById("username2").value;
+        let b = document.getElementById("password2").value;
+        let c = document.getElementById("name");
+        if (isAccountPasswordExist(a,b) === true) {
+            alert(`Chào mừng ${accountNames[checkName(a)]}!!!`);
+            location.href="Trang_Chu.html"
+            c.innerHTML = `<p style="margin-top: 0"><b>${accountNames[checkName(a)]}</b</p>`;
+        } else{
+            alert("Đăng nhập thất bại");
+            clear();
+        }
+    }
+    //console.log(a);
+
+    function goto_regsiter() {
+        location.href="dang_ki.html"
+    }
+</script>
+</body>
+</html>

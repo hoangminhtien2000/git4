@@ -1,0 +1,287 @@
+/*----------------------Nút sửa--------------------------*/
+.edit {
+    background-color: #c25504;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 1em;
+    font-size: 10px;
+    line-height: 1em;
+    margin: 15px 15px;
+    outline: none;
+    padding: 10px 20px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.edit:before,
+.edit:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.edit:before {
+    border-color: #c25504;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.edit:after {
+    border-bottom-width: 2px;
+    border-color: #c25504;
+    bottom: -5px;
+    right: 0px;
+}
+
+.edit:hover,
+.edit.hover {
+    background-color: #c25504;
+}
+
+.edit:hover:before,
+.edit.hover:before,
+.edit:hover:after,
+.edit.hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*----------------------Nút xoá--------------------------*/
+.delete {
+    background-color: rgba(136, 39, 2, 0.91);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 1em;
+    font-size: 10px;
+    line-height: 1em;
+    margin: 15px 15px;
+    outline: none;
+    padding: 10px 20px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.delete:before,
+.delete:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.delete:before {
+    border-color: rgba(136, 39, 2, 0.91);
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.delete:after {
+    border-bottom-width: 2px;
+    border-color: rgba(136, 39, 2, 0.91);
+    bottom: -5px;
+    right: 0px;
+}
+
+.delete:hover,
+.delete.hover {
+    background-color: rgba(136, 39, 2, 0.91);
+}
+
+.delete:hover:before,
+.delete.hover:before,
+.delete:hover:after,
+.delete.hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+/*----------------------Nút đăng nhập - đăng xuất - tạo tài koản--------------------------*/
+.login{
+
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-radius:50px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+
+}
+
+
+.login:hover{
+    border: 1px solid #071982;
+    color: #80ffd3!important;
+}
+.login::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #071982;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow:2px 0px 14px rgba(0,0,0,.6);
+}
+
+.login::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.login:hover::before, .login:hover::before{
+    opacity:1;
+    width: 116%;
+}
+.login:hover::after, .login:hover::after{
+    opacity:1;
+    width: 120%;
+}
+
+/*----------------------Nút thêm--------------------------*/
+.add1 {
+    background-color: brown;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 1em;
+    font-size: 10px;
+    line-height: 1em;
+    margin: 10px 10px;
+    outline: none;
+    padding: 5px 10px 5px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.add1:before,
+.add1:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.add1:before {
+    border-color: brown;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.add1:after {
+    border-bottom-width: 2px;
+    border-color: brown;
+    bottom: -5px;
+    right: 0px;
+}
+
+.add1:hover,
+.add1.hover {
+    background-color: brown;
+}
+
+.add1:hover:before,
+.add1.hover:before,
+.add1:hover:after,
+.add1.hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+/*----------------------Nút tìm kiếm--------------------------*/
+.search {
+    background: indianred;
+    background: linear-gradient(0deg, indianred 0%, indianred 100%);
+    border: none;
+    height: 23px;
+
+}
+.search:before {
+    height: 0%;
+    width: 2px;
+}
+.search:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+/*--------------------------------footer---------------------------------*/
+.footer{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px ;
+    font-size: 18px;
+    margin-left: 230px;
+
+}

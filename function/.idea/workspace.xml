@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68255ce3-84f2-41b0-be56-51a2c690ae25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lap_trinh_huong_doi_tuong/Xay_dung_lop_hinh_tron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Product_Management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/case_01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/cau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/cau2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/cau3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/cau3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/cau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_Thuc_Hanh_Modul01/cau4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Convert_feet_meters.html" beforeDir="false" afterPath="$PROJECT_DIR$/Convert_feet_meters.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice_use_function_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_use_function_01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_use_function_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_use_function_02.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Quan_ly_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/Quan_ly_san_pham.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../if_else_case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../if_else_case/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -43,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/webstorm/buoi2/Mang&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/webstorm/buoi2/function&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -69,7 +71,13 @@
       <workItem from="1666068658485" duration="11043000" />
       <workItem from="1666108018484" duration="257000" />
       <workItem from="1666162231189" duration="7308000" />
-      <workItem from="1666187430271" duration="3130000" />
+      <workItem from="1666187430271" duration="3615000" />
+      <workItem from="1666227764062" duration="533000" />
+      <workItem from="1666254420672" duration="1516000" />
+      <workItem from="1666268640883" duration="37000" />
+      <workItem from="1666275112404" duration="4007000" />
+      <workItem from="1666335538034" duration="866000" />
+      <workItem from="1666689382594" duration="447000" />
     </task>
     <servers />
   </component>

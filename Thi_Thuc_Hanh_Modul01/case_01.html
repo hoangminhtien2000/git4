@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr><td>Img:</td> <td><input id="inputImg" placeholder="Nhập ảnh"></td></tr>
+  <tr><td>Name:</td> <td><input id="inputName" placeholder="Nhập tên"></td></tr>
+  <tr><td>Price:</td> <td><input id="inputPrice" placeholder="Nhập giá"></td></tr>
+</table>
+<button onclick="add()">ADD</button>
+<h2>MENU</h2>
+<table id="show" width="400"></table>
+
+</body>
+</html>
+
+<script>
+    let names = [
+        ["https://wallpaperaccess.com/full/1320703.jpg", "Coffe", 30000],
+        ["https://wallpaperaccess.com/full/82635.jpg", "Cream", 25000]
+    ];
+    let divShow = document.getElementById("show");
+
+    function show() {
+        let str = `
+                <tr>
+                <th></th>
+                <th>Tên</th>
+                <th>Giá</th>
+               </tr>
+                <tr><td colspan="5"><hr></td></tr>`;
+        for (let i = 0; i < names.length; i++) {
+            str += `<tr>
+
+                        <td><img src="${names[i][0]}" width="100" height="50"></td>
+                        <td>${names[i][1]}</td>
+                        <td>${names[i][2]}</td>
+                        <td><button onclick="edit(${i})">Edit</button></td>
+                        <td><button onclick="xoa(${i})">Delete</button></td>
+                    </tr>
+                    <tr><td colspan="5"><hr></td></tr>`;
+        }
+        divShow.innerHTML = str;
+    }
+
+    function edit(index) {
+        let img = prompt("Nhập img muốn sửa");
+        let name = prompt("Nhập name muốn sửa");
+        let price = prompt("Nhập price muốn sửa");
+        names.splice(index, 1, [img, name, price]);
+        show();
+    }
+
+    function add() {
+        let img = document.getElementById("inputImg").value;
+        let name = document.getElementById("inputName").value;
+        let price = document.getElementById("inputPrice").value;
+        names.push([img, name, price]);
+        show();
+    }
+
+    function xoa(index) {
+        names.splice(index, 1);
+        show();
+    }
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong</title>
+</head>
+<body>
+<input id="enter">
+<button onclick="enter1()">Tinh</button>
+<br/>
+<div id="result">Hiển thị kết quả ở đây</div>
+<script>
+
+    let a = "555";
+    let b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < b.length; j++) {
+            if (a[i] == b[j]) {
+                sum += b[j]
+            }
+        }
+    }
+    alert(sum)
+
+</script>
+</body>
+</html>

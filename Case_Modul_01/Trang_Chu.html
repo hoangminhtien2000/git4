@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="CHINH_NUT.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý thực đơn</title>
+</head>
+<body style="background: url('background.png') top center / cover no-repeat">
+<marquee
+        style="color:#110505 ; background-color: rgba(172,217,234,0.24); height: 40px;font-size: 35px;width: 830px;margin-left: 300px;">
+    MINH TIẾN COFFEE UỐNG LÀ MÊ!!!
+</marquee>
+
+<div style="margin-left: 500px;margin-top: 10px">
+    <img id="avatar" onclick="changeAvatar()" src="avatar.png" width="100px" height="100px" >
+    <button class="login" onclick="logout()">Đăng xuất</button>
+</div>
+
+<div id="name" style=" margin-left: 500px;margin-top: 10px;font-size: 24px;font-family: 'Agency FB'">TÊN TÀI KHOẢN</div>
+
+<!---------------------------------------------MENU && INFORMATION----------------------------------------------------->
+<table>
+    <tr>
+        <td>
+            <div style="margin-left: 380px;margin-top: 30px;font-size: 30px"><b>THÔNG TIN</b></div>
+        </td>
+        <td>
+            <div style="margin-left: 200px;margin-top: 30px;font-size: 30px"><b>THỰC ĐƠN</b></div>
+        </td>
+    </tr>
+</table>
+
+<div style="margin-left: 300px;  background-color: rgba(240,252,255,0.14); padding: 30px; width: 780px;font-size: 20px ">
+    <table>
+        <tr>
+            <td style="vertical-align:top ">
+                <form action="https://www.google.com.vn/search" target="_blank" >
+                    <input style="background-color: rgba(255,255,255,0.75); border: none; width: 200px; height: 20px"
+                           type="text" name="q"/>
+                    <button class="search">Tìm kiếm</button>
+                </form>
+                <br>
+                <table border="1" style=" border: 1px solid black; width: 300px;text-align: center; float: left ">
+                    <tr>
+                        <td>Ảnh:</td>
+                        <td>
+                            <input style="background-color: rgba(240,252,255,0.14);border: none;margin-bottom: 4px"
+                                   id="inputImg" placeholder="Nhập đường dẫn ảnh">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tên:</td>
+                        <td>
+                            <input style="background-color: rgba(240,252,255,0.14);border: none;margin-bottom: 4px"
+                                   id="inputName" placeholder="Nhập tên">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Giá:</td>
+                        <td>
+                            <input style="background-color: rgba(240,252,255,0.14);border: none;margin-bottom: 4px"
+                                   id="inputPrice" type="number" placeholder="Nhập giá">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="add1" style="margin-bottom: 4px" onclick="add()">Thêm</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="show" style="width: 400px; height: 100px;text-align: center"></table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<audio width="auto" height="200px" controls autoplay loop src="NgayTho.acc"></audio>
+
+<!-------------------------------------------------FOOTER---------------------------------------------------------->
+<footer style=" background-color: rgba(255,127,80,0.36);margin-top: 40px; width: 100%" >
+    <div style="font-size: 23px;font-family: Algerian;color: brown;padding-left: 650px" ><a style="color: brown" href="https://www.facebook.com/odaycogaixinh68" target="_blank"><b>MINH TIẾN COFFEE</b></a></div>
+    <div class="footer">
+        <div>Địa chỉ: Ngách 44 Nguyễn Cơ Thạch</div>
+        <div>Hotline : 02413996852</div>
+        <div>Email: hoangminhtien@gmail.com</div>
+    </div>
+
+</footer>
+<!--------------------------------------------------FOOTER------------------------------------------------------------->
+<!--<script>-->
+<!--    function coffee() {-->
+<!--        window.open('https://www.facebook.com/odaycogaixinh68', '_blank');-->
+<!--    }-->
+
+<!--</script>-->
+
+
+<script>
+    // -------------------------------------------------AVATAR------------------------------------------------------------
+    let avatar = document.getElementById("avatar");
+
+    function changeAvatar() {
+        let x = prompt("Nhập đường dẫn Avatar: ");
+        if (x == 0)
+            return avatar.src;
+        else avatar.src = x;
+    }
+    // -------------------------------------------------AVATAR------------------------------------------------------------
+
+    function logout() {
+        location.href="HOME.html"
+    }
+</script>
+<script src="MENU.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <title>Câu4</title>
 </head>
 <body>
+<canvas id="canvas" width="800" height="800"> </canvas>
 <script>
   class Rectangle{
     x;
@@ -20,10 +21,17 @@
       this.height = height;
       this.color = color;
     }
-    get render(){
-
+    render(canvas){
+        let context= canvas.getContext("2d");
+        context.strokeStyle=this.color;//context.fillStyle=this.color;
+        context.strokeRect(this.x,this.y,this.width,this.height);//context.fillRect(this.x,this.y,this.width,this.height);
     }
   }
+  let canvas=document.getElementById("canvas");
+  let hinh1= new Rectangle(100,100,300,200,"red");
+  let hinh2= new Rectangle(150,200,300,200,"black");
+  hinh1.render(canvas);
+  hinh2.render(canvas);
 </script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí</title>
+</head>
+<body>
+<table style="margin-top: 250px; margin-left: 600px">
+    <tr>
+        <td>Tên đăng nhập:</td>
+        <td><input id="username1"></td>
+    </tr>
+    <tr>
+        <td>Mật khẩu:</td>
+        <td><input type="password" id="password1"></td>
+    </tr>
+    <tr>
+        <td>Tên tài khoản:</td>
+        <td><input id="name1"></td>
+    </tr>
+    <tr>
+        <td><button onclick="register()">Đăng kí</button></td>
+    </tr>
+</table>
+
+
+<script>
+    let usernames  = JSON.parse(localStorage.getItem("usernames"));
+    let passwords  = JSON.parse(localStorage.getItem("passwords"));
+    let accountNames  = JSON.parse(localStorage.getItem("accountNames"));
+    if (usernames === null||passwords === null||accountNames === null) {
+        usernames = ["hoangminhtien","a"];
+        passwords = ["123","123"];
+        accountNames = ["Hoàng Minh Tiến","TESTER"];
+    }
+
+    //-----------------------------------Kiểm tra tên đăng nhập đã tồn tại chưa--------------------------------------------
+    function isAccountExist(username) {
+        localStorage.setItem("usernames", JSON.stringify(usernames));
+        for (let i in usernames) {
+            if (usernames[i] === username) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //----------------------------------------------- Xoá dòng vừa viết--------------------------------------------------
+    function clear() {
+        let a = document.getElementById("username1").value="";
+        let b = document.getElementById("password1").value="";
+        let c = document.getElementById("name1").value="";
+
+    }
+
+    function register() {
+        let a = document.getElementById("username1").value;
+        let b = document.getElementById("password1").value;
+        let c = document.getElementById("name1").value;
+        //Không cho phép tạo tài khoản trùng tên đăng nhập(User Name) với tài khoản đã được tạo.
+        if (isAccountExist(a) === true) {
+            alert("Tên đăng nhập đã tồn tại. Mời tạo tên đăng nhập khác.");
+            clear();
+        } else {
+            usernames.push(a);
+            passwords.push(b);
+            accountNames.push(c);
+            alert("Tài khoản tạo thành công");
+            localStorage.setItem("usernames", JSON.stringify(usernames));
+            localStorage.setItem("passwords", JSON.stringify(passwords));
+            localStorage.setItem("accountNames", JSON.stringify(accountNames));
+            clear();
+            location.href="dangnhap.html"
+        }
+    }
+
+</script>
+</body>
+</html>

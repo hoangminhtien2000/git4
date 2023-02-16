@@ -17,15 +17,14 @@
     function sumOfListPrime(x) {
         let sum = 0;
         for (let i = 0; i <= x; i++) {
-            ktsnt(i);
-            if (ktsnt(i) == i) {
+            if (ktsnt(i)) {
                 sum += i;
             }
         }
         return sum;
     }
 
-    let b = sumOfListPrime(5);
+    let b = sumOfListPrime(11);
     document.write(b);
 </script>
 </body>

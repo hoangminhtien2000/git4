@@ -24,8 +24,8 @@ Enter name's Product: <input id="ip">
             str += `<tr>
         <td>${i}</td>
         <td><h4>${name[i]}</h4></td>
-        <td><button onclick="delete1()">DELETE</button</td>
-        <td><button onclick="edit1()">EDIT</button</td>
+        <td><button onclick="delete1(${i})">DELETE</button</td>
+        <td><button onclick="edit1(${i})">EDIT</button</td>
         </tr>`
         }
         ht.innerHTML=str;
